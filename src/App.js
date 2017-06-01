@@ -8,7 +8,7 @@ class App extends Component {
   const numMines = 20;
   var board = [];
 
-  updateBoard = function(square, flagged) {
+  updateBoard(square, flagged) {
     if (flagged) {
       tile.toggleFlag();
     } else {
@@ -16,14 +16,14 @@ class App extends Component {
     }
     this.setState({ board: this.state.board });
   },
-  generateBoard = function() {
+  generateBoard () {
     for(x = 0; y < xSize; x++) {
       this.boardData.push;
       for(y=0; y < ySize; y++) {
         var square = new Square(this, [x, y]);
         this.grid[x].push(square);        
-  }
-  plantMines = function() {
+  },
+  plantMines () {
     var plantedCount = 0;
     while (plantedCount < numMines) {
       var row = Math.floor(Math.random() * (xSize - 1));

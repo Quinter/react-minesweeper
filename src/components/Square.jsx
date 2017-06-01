@@ -3,7 +3,7 @@ class Square extends  {
   handleClick() {
     var flagged ;
     this.props.updateGame(this.props.tile, flagged);
-  }
+  },
   adjcacentMines() {
     const directions = [[-1, -1], [-1,  0], [-1,  1], [ 0, -1], [ 0,  1], 
                         [ 1, -1], [ 1,  0], [ 1,  1]];
